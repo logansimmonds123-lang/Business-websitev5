@@ -1,0 +1,217 @@
+body {
+    font-family: 'lato', sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #292929;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+
+    background-color: #be0000;
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #003366;
+}
+
+.hero {
+    background: url('your-image.jpg') no-repeat center center/cover;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'lato', sans-serif;
+}
+
+.hero .cta-button {
+    background-color: #be0000;
+    color: rgb(0, 0, 0);
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero .cta-button:hover {
+    background-color: #e55b51;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: solid rgb(255, 255, 255);
+}
+
+.business-ideas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.business-ideas .card {
+    background-color: #be0000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.business-ideas .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.business-ideas .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.business-ideas .card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.business-ideas .card .cta-button {
+    background-color: #007acc;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.business-ideas .card .cta-button:hover {
+    background-color: #003366;
+}
+
+footer {
+    background-color: #292929;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+footer ul li a {
+    color: rgb(255, 255, 255)
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .social-links {
+    margin-top: 20px;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #ff0000;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .cta-button {
+        font-size: 16px;
+    }
+
+    .business-ideas {
+        grid-template-columns: 1fr;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
